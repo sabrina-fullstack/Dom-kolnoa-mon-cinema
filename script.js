@@ -6,7 +6,7 @@ function addMovies() {
   let names = document.getElementById("names").value;
   let duration = document.getElementById("duration").value;
   let price = document.getElementById("price").value;
-  let posterFile= document.getElementById("poster").files[0];
+  let posterFile = document.getElementById("poster").files[0];
   let poster = URL.createObjectURL(posterFile);
   let dates = document.getElementById("dates").value;
 
@@ -37,9 +37,7 @@ function renderMovies() {
   
             <td><img src="${movie.poster}" width="80" height="120"></td>  
          <td>${movie.dates}</td>
-      `<td><button onclick="deleteMovie(${index})">Delete</button></td>`
-  
-  `;
+      <td><button onclick="deleteMovie(${index})">Delete</button></td>`;
     tbody.appendChild(row);
   });
 }

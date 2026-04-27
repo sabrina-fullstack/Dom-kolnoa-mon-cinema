@@ -65,7 +65,7 @@ paraSuppr.addEventListener("click", function () {
   paraSuppr.remove();
 });
 
-// mouseenter / mouseleave
+// mouseenter / mouseleave.
 // Quand la souris entre sur un div, changez son fond en gris. Quand elle part, remettez-le en blanc.
 
 const divSouris = document.querySelector("#divSouris");
