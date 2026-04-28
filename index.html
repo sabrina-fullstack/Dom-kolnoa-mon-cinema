@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>🎬 Planete Cinema🎬</h1>
     <nav>
       <div><a href="about.html">About page</a></div>
       <div><a href="index.html">Home Page</a></div>
-  
     </nav>
     <h3>Book, search, compare your ticket</h3>
     <form id="myForm">
+      <label for="genre">Genre :</label>
       <select id="genre" name="genre">
         <option value="thriller">Thriller</option>
         <option value="action">Action</option>
@@ -21,11 +22,17 @@
         <option value=" scienceFiction ">Science Fiction</option>
         <option value=" animation ">Animation</option>
       </select>
+      <label for="title">Title:</label>
       <input type="text" id="title" name="Movie Name" />
+      <label for="names">Names:</label>
       <input type="text" id="names" name="Director's name" />
+      <label for="duration">Duration:</label>
       <input type="number" id="duration" name="Film duration (in minutes)" />
+      <label for="price">Price:</label>
       <input type="number" id="price" name="Ticket price" />
+      <label for="poster">Poster:</label>
       <input type="file" id="poster" name="Poster (URL)" />
+      <label for="dates">Date :</label>
       <input type="date" id="dates" name="Screening date" />
       <button type="button" onclick="addMovies()">Submit</button>
     </form>
@@ -44,5 +51,6 @@
       </thead>
       <tbody></tbody>
     </table>
+    <script src="script.js"></script>
   </body>
 </html>

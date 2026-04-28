@@ -21,6 +21,8 @@ function addMovies() {
   };
   movies.push(movie);
   renderMovies();
+  updateStats();
+  saveToLocalStorage();
 }
 function renderMovies() {
   // Fontion renderMovies - vide et reconstruit le tableau

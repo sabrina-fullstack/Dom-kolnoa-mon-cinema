@@ -1,0 +1,273 @@
+/* ===========================
+   עיצוב כללי / Style général
+   =========================== */
+
+body {
+  background-color: #8a9a7b;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+/* --- כותרת / Titre --- */
+h1 {
+  text-align: center; /* מרכז = centré */
+  color: #333; /* צבע כותרת = couleur du titre */
+  margin-bottom: 30px; /* מרווח מתחת = espace en dessous */
+}
+
+p,
+h2 {
+  max-width: 800px;
+}
+
+/* ===========================
+   תפריט ניווט / Menu de navigation
+   - תפריט אופקי = menu horizontal
+   - אפקט hover = effet au survol
+   - ללא קו תחתון = sans soulignement
+   - קישורים בהירים = liens clairs
+   =========================== */
+
+nav a {
+  color: #333; /* קישורים בהירים = liens clairs */
+  text-decoration: none; /* ללא קו תחתון = sans soulignement */
+  font-weight: 600;
+  font-size: 16px;
+}
+nav a:hover {
+  color: #ffffff; /* אפקט hover = effet au survol */
+}
+
+nav ul {
+  list-style: none; /* הסרת נקודות = supprimer les puces */
+  display: flex !important; /* תפריט אופקי = menu horizontal (côte à côte) */
+  gap: 30px; /* מרווח בין קישורים = espace entre les liens */
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+/* ===========================
+   עיצוב טופס / Style du formulaire
+   - מסגרת = bordure autour du formulaire
+   - padding = espace intérieur entre le bord et le contenu
+   - שדות אחידים = champs uniformes
+   - כפתור בולט = bouton visible/accrocheur
+   =========================== */
+
+form {
+  border: 2px solid #a0785a; /* מסגרת = bordure autour du formulaire */
+  padding: 25px; /* padding = espace intérieur entre le bord et le contenu */
+  border-radius: 10px; /* פינות מעוגלות = coins arrondis */
+  max-width: 400px; /* רוחב מקסימלי = largeur maximale */
+  margin: 0 auto; /* מרכז את הטופס = centrer le formulaire */
+  background-color: #f5f5f0;
+}
+
+/* --- כל שדה בטופס / Chaque champ du formulaire --- */
+form div {
+  margin-bottom: 15px; /* מרווח בין שדות = espace entre les champs */
+}
+
+/* --- תוויות / Labels --- */
+label {
+  display: block; /* כל label בשורה חדשה = chaque label sur une nouvelle ligne */
+  margin-bottom: 5px; /* מרווח קטן מתחת = petit espace en dessous */
+  font-weight: 600; /* טקסט מודגש = texte en gras */
+}
+
+/* --- שדות אחידים / Champs uniformes - tous les inputs ont la même taille et le même style --- */
+form input,
+form select {
+  width: 100%; /* אותו רוחב = même largeur */
+  padding: 10px; /* מרווח פנימי = espace intérieur */
+  margin-top: 5px;
+  border: 1px solid #a0785a; /* מסגרת צבעונית = bordure colorée */
+  border-radius: 5px; /* פינות מעוגלות = coins arrondis */
+  background-color: #f5f5f0; /* רקע כהה לשדות = fond blanc cassé pour les champs */
+  color: #333; /* טקסט בהיר = texte  gris foncé */
+  font-family: Arial, sans-serif; /* אותו גופן = même police */
+  font-size: 14px; /* אותו גודל גופן = même taille de police */
+  box-sizing: border-box; /* מונע גלישה = empêche les champs de dépasser */
+}
+
+/* --- כפתור בולט / Bouton visible/accrocheur - le bouton se démarque visuellement --- */
+button {
+  width: 100%; /* רוחב מלא = largeur complète */
+  padding: 12px; /* מרווח פנימי = espace intérieur */
+  margin-top: 15px;
+  background-color: #a0785a; /* צבע רקע = couleur de fond */
+  color: #ffffff; /* טקסט לבן = texte blanc */
+  border: none; /* ללא מסגרת = sans bordure */
+  border-radius: 5px; /* פינות מעוגלות = coins arrondis */
+  font-size: 16px;
+  font-weight: 600; /* טקסט מודגש = texte en gras */
+  cursor: pointer; /* סמן יד = curseur en forme de main */
+  font-family: Arial, sans-serif; /* אותו גופן = même police */
+  letter-spacing: 1px; /* מרווח בין אותיות = espace entre les lettres */
+  transition: background-color 0.3s; /* אנימציה חלקה = transition douce */
+}
+
+button:hover {
+  background-color: #7a5a42; /* une couleur plus foncée */
+}
+/* ===========================
+   עיצוב טבלה / Style du tableau
+   - רוחב 100% = largeur 100%
+   - צבע כותרת = couleur de l'en-tête
+   - hover לשורות = effet au survol des lignes
+   - טקסט ממורכז = texte centré
+   =========================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #f5f5f0;
+}
+
+/* --- צבע כותרת / Couleur de l'en-tête --- */
+table thead tr th {
+  background-color: #8a9a7b;
+  color: white;
+  border: 1px solid #8a9a7b;
+  padding: 12px;
+  text-align: center;
+}
+td {
+  padding: 12px; /* מרווח פנימי = espace intérieur */
+  text-align: center; /* טקסט ממורכז = texte centré */
+  border: 1px solid #8a9a7b; /* מסגרת = bordure */
+}
+
+/* --- couleur de base des lignes (nécessaire pour que le hover fonctionne) --- */
+tbody tr {
+  background-color: #f5f5f0; /* צבע בסיס = couleur de base des lignes */
+}
+
+/* --- hover לשורות / Effet au survol des lignes --- */
+tbody tr:hover {
+  background-color: #a8bc95; /* צבע בריחוף = légèrement plus clair au survol */
+  cursor: pointer;
+}
+
+/* ===========================
+   רספונסיביות / Responsivité
+   - מתאים לנייד = adapté au mobile
+   - max-width = largeur maximale
+   - margin auto = centrer automatiquement
+   =========================== */
+
+/* --- conteneur général / מיכל כללי --- */
+body {
+  max-width: 900px; /* רוחב מקסימלי = largeur maximale, pas trop large sur grand écran */
+  margin: 0 auto; /* מרכז את הדף = centrer la page automatiquement */
+  padding: 20px;
+}
+
+/* --- מתאים לנייד / Adapté au mobile --- */
+@media (max-width: 600px) {
+  /* si l'écran est plus petit que 600px = téléphone */
+
+  form {
+    padding: 15px; /* moins de padding sur mobile */
+  }
+  nav ul {
+    flex-direction: column; /* menu vertical sur mobile car pas assez de place horizontal */
+    gap: 10px;
+  }
+}
+
+table {
+  font-size: 12px; /* texte plus petit sur mobile */
+  display: block; /* ajouté car le tableau avec le nb de colonnes dépasse sur mobile */
+  overflow-x: auto; /* permet de scroller horizontalement si tableau trop large */
+  white-space: nowrap; /* empêche le texte de se couper sur mobile */
+}
+
+th,
+td {
+  padding: 6px; /* moins de padding dans le tableau */
+}
+
+/* ===========================
+   אנימציות CSS / Animations CSS
+   =========================== */
+
+/* --- 1. Animation d'apparition des lignes du tableau --- */
+/* כניסה הדרגתית = apparition progressive quand un film est ajouté */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } /* commence invisible */
+  to {
+    opacity: 1;
+  } /* finit visible */
+}
+
+tbody tr {
+  animation: fadeIn 0.5s ease; /* applique l'animation en 0.5 secondes */
+}
+
+/* --- 2. Animation pulsation sur le bouton Submit au survol --- */
+/* דופק = pulse - le bouton grossit légèrement au survol */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  } /* taille normale */
+  50% {
+    transform: scale(1.05);
+  } /* légèrement plus grand */
+  100% {
+    transform: scale(1);
+  } /* retour à la normale */
+}
+
+button:hover {
+  animation: pulse 0.5s ease;
+  background-color: #a8bc95; /* garde la couleur hover */
+}
+
+/* --- 3. Animation d'apparition du titre au chargement --- */
+/* כותרת = le titre descend du haut au chargement de la page */
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px); /* commence 20px au dessus */
+    opacity: 0; /* commence invisible */
+  }
+  to {
+    transform: translateY(0); /* position normale */
+    opacity: 1; /* visible */
+  }
+}
+
+h1 {
+  animation: slideDown 0.8s ease; /* applique l'animation en 0.8 secondes */
+}
+
+/* --- 4. Animation d'apparition du formulaire au chargement --- */
+/* טופס = le formulaire apparaît progressivement */
+@keyframes fadeInForm {
+  from {
+    opacity: 0; /* commence invisible */
+    transform: translateY(20px); /* commence 20px en dessous */
+  }
+  to {
+    opacity: 1; /* visible */
+    transform: translateY(0); /* position normale */
+  }
+}
+
+form {
+  animation: fadeInForm 0.8s ease; /* applique l'animation en 0.8 secondes */
+}
+/* supprime l'animation de tbody tr et crée une classe à la place */
+.fadeIn {
+  animation: fadeIn 0.5s ease;
+}
+img {
+  width: 150px; /* plus petite */
+  border-radius: 50%; /* forme ronde — joli pour une photo de profil ! */
+  display: block;
+  margin: 20px auto; /* centrée */
+}
